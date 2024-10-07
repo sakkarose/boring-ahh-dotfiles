@@ -1,2 +1,2 @@
 # boring-ahh-dotfiles
-My dotfiles, that's all !
+My dotfiles, that's all xd
