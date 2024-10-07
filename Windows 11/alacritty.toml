@@ -1,0 +1,13 @@
+import = [
+  "C:\\Users\\***\\AppData\\Roaming\\alacritty\\catppuccin-latte.toml"
+]
+
+[env]
+TERM = "xterm-256color"
+
+[shell]
+program = "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
+args = ["-WorkingDirectory ~\\Downloads"]
+
+[font]
+normal = { family = "FantasqueSansM Nerd Font", style = "Regular" }
