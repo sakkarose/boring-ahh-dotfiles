@@ -14,8 +14,8 @@ args = ["-WorkingDirectory ~\\Downloads"]
 normal = { family = "FantasqueSansM Nerd Font", style = "Regular" }
 size = 12
 
-
 [window]
 padding = { x = 3, y = 3 }
 dynamic_padding = true
 opacity = 0.9
+dynamic_title = false
