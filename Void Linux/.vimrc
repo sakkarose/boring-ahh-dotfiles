@@ -1,4 +1,4 @@
-# Location ~
+# Location ~/
 call plug#begin()
 set termguicolors
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
