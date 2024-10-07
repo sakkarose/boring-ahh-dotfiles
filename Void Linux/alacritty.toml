@@ -1,4 +1,4 @@
-# Location= /home/$USER/.config/alacritty/alacritty.toml
+# Location /home/$USER/.config/alacritty/alacritty.toml
 import = [
   "~/.config/alacritty/catppuccin-latte.toml"
 ]
