@@ -1,0 +1,7 @@
+# Location /etc/greetd/config.toml
+[terminal]
+vt = 7
+
+[default_session]
+command = "tuigreet --asterisks --cmd Hyprland"
+user = "_greeter"
