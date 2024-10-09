@@ -1,2 +1,2 @@
 # boring-ahh-dotfiles
-My dotfiles, that's all xd
+Imma put on a guide after my setup is done.
