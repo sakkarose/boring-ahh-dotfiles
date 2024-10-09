@@ -1,4 +1,4 @@
-# Location ~/
+# Location ~/ for both root and user
 call plug#begin()
 set termguicolors
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
