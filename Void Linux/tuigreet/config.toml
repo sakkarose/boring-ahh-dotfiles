@@ -1,7 +1,6 @@
-# Location /etc/greetd/config.toml
 [terminal]
 vt = 7
 
 [default_session]
-command = "tuigreet --asterisks --cmd Hyprland"
+command = "tuigreet -t --time-format '%A, %B %d, %Y | %I:%M %p' --asterisks --asterisks-char '_' --theme 'input=lightred;action=lightblue;border=green;action=lightyellow;prompt=white;title=lightgreen;time=lightcyan;button=white;text=lightmangeta' -c Hyprland"
 user = "_greeter"
