@@ -1,2 +1,2 @@
 # boring-ahh-dotfiles
-Imma put on a guide after my setup is done.
+Imma put on preview and a guide after my setup is done.
