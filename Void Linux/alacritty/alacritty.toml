@@ -1,5 +1,5 @@
 # Location ~/.config/alacritty/
-import = [
+general.import = [
   "~/.config/alacritty/catppuccin-latte.toml"
 ]
 
