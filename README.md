@@ -7,8 +7,8 @@ Configuration file locations:
 > ~/.config/alacritty/
 * hyprland/hyprland.conf
 > ~/.config/hypr/
-* 
-> 
+* tuigreet/config.toml
+> /etc/greetd/
 * oh-my-posh/.theme.omp.json
 > ~/.config/
 * fish/config.fish
