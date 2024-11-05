@@ -17,4 +17,7 @@ Configuration file locations:
 > ~/ (for both root and user)
 * vim/catppuccin_latte.vim
 > ~/.vim/colors/
-
+* wofi/config & wofi/style.css
+> ~/.config/wofi/
+* yazi/*
+> ~/.config/yazi/
