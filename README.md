@@ -3,7 +3,7 @@ Imma put on preview and a guide after my setup is done.
 
 Configuration file locations:
 
-* alacritty/alacritty.toml & alacritty/catppuccin-latte.toml
+* alacritty/*
 > ~/.config/alacritty/
 * hyprland/hyprland.conf
 > ~/.config/hypr/
