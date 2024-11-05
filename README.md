@@ -13,3 +13,8 @@ Configuration file locations:
 > ~/.config/
 * fish/config.fish
 > ~/.config/fish/
+* vim/.vimrc
+> ~/ (for both root and user)
+* vim/catppuccin_latte.vim
+> ~/.vim/colors/
+
