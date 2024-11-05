@@ -1,4 +1,3 @@
---- Location ~/.config/yazi/
 function Linemode:size_mtime()
         local time = math.floor(self._file.cha.modified or 0)
         if time == 0 then
