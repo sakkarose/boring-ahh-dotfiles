@@ -5,8 +5,8 @@ Configuration file locations:
 
 * alacritty/alacritty.toml & alacritty/catppuccin-latte.toml
 > ~/.config/alacritty/
-* 
->
+* hyprland/hyprland.conf
+> ~/.config/hypr/
 * 
 > 
 * oh-my-posh/.theme.omp.json
