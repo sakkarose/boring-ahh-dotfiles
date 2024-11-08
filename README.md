@@ -21,3 +21,4 @@ Configuration file locations:
 > ~/.config/wofi/
 * yazi/*
 > ~/.config/yazi/
+ 
