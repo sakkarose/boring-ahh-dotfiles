@@ -32,4 +32,8 @@ Configuration file locations:
 
 * spotify-player/*
 > ~/.config/spotify-player/
+
+* fastfetch/*
+> C:/Users/$USER/.config/fastfetch/config.jsonc
+> ~/.config/fastfetch/config.jsonc
  
