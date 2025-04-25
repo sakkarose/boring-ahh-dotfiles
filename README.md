@@ -35,6 +35,7 @@ Configuration file locations:
 
 * fastfetch/config.jsonc
 > C:/Users/$USER/.config/fastfetch/
+
 > ~/.config/fastfetch/
 
 * joplin
