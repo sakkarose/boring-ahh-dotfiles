@@ -5,7 +5,8 @@ Configuration file locations:
 
 * alacritty/*
 > ~/.config/alacritty/
-> C:/Users/$USER/.config/alacritty/
+
+> $APPDATA/alacritty/
 
 * hyprland/hyprland.conf
 > ~/.config/hypr/
