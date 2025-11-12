@@ -20,7 +20,7 @@ dynamic_title = false
 
 [general]
 import = [
-  "%APPDATA%\\alacritty\\catppuccin-latte.toml"
+  ".\\catppuccin-latte.toml"
 ]
 
 [terminal]
