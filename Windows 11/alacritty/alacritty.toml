@@ -1,13 +1,11 @@
-# Location= ~\\AppData\\Roaming\\alacritty\\alacritty.toml
-import = [
-  "~\\AppData\\Roaming\\alacritty\\catppuccin-latte.toml"
-]
-
 [env]
 TERM = "xterm-256color"
 
-[shell]
-program = "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
+[terminal.shell]
+# Powershell 7
+# program = "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
+# Powershell 5
+program = "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
 args = ["-WorkingDirectory ~\\Downloads"]
 
 [font]
@@ -19,3 +17,10 @@ padding = { x = 3, y = 3 }
 dynamic_padding = true
 opacity = 0.9
 dynamic_title = false
+
+[general]
+import = [
+  "%APPDATA%\\alacritty\\catppuccin-latte.toml"
+]
+
+[terminal]
