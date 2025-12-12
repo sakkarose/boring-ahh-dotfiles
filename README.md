@@ -43,3 +43,5 @@ Configuration file locations:
 * joplin
 > C:/Users/$USER/.config/joplin-desktop
  
+* waybar
+> ~/.config/waybar/
