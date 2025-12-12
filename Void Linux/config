@@ -1,0 +1,140 @@
+{
+    "layer": "top",
+    "position": "top",
+    "modules-left": ["hyprland/workspaces", "custom/sep", "hyprland/window"],
+    "modules-center": ["custom/music"],
+    "modules-right": ["temperature", "network", "memory", "disk", "cpu", "pulseaudio#microphone", "pulseaudio", "backlight", "battery", "clock" , "tray", "custom/lock", "custom/power"],
+
+    "wlr/workspaces": {
+        "disable-scroll": true,
+        "sort-by-name": true,
+        "format": " {icon} ",
+        "format-icons": {
+            "default": "",
+        },
+    },
+
+    "hyprland/window": {
+        "format": "{}",
+        "rewrite": {
+            "(.{42}).*": "$1..",
+        },
+        "icon": true,
+        "icon-size": 22,
+    },
+
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
+    },
+
+    "custom/music": {
+        "format": "  {}",
+        "escape": true,
+        "interval": 5,
+        "tooltip": false,
+        "exec": "playerctl metadata --format='{{ lc(artist) }} - {{ lc(title) }}'",
+        "on-click": "playerctl play-pause",
+        "max-length": 50
+    },
+
+    "clock": {
+        "timezone": "Asia/Ho_Chi_Minh",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "format-alt": "  {:%d/%m/%Y}",
+        "format": "󰸘 {:%H:%M}"
+    },
+
+    "backlight": {
+        "device": "intel_backlight",
+        "tooltip": false,
+        "format": "{icon}",
+        "format-icons": ["󰽤", "", "", "", "", "", "󰽣", "", "", "", "", "", "", "󰽢"],
+        "on-click": "echo $(( $(cat /sys/class/backlight/intel_backlight/brightness) + 375 )) > /sys/class/backlight/intel_backlight/brightness",
+        "on-click-right": "echo $(( ($(cat /sys/class/backlight/intel_backlight/brightness) - 375) > 50? ($(cat /sys/class/backlight/intel_backlight/brightness) - 375) : 50 )) > /sys/class/backlight/intel_backlight/brightness"
+    },
+
+    "battery": {
+        "states": {
+            "warning": 35,
+            "critical": 20
+        },
+        "format": "{icon}",
+        "format-charging": "󰂄",
+        "format-plugged": "󱈏",
+        "format-alt": "{icon}",
+        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    },
+
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": " {volume}%",
+        "format-source-muted": "",
+        "on-click": "pavucontrol -t 4",
+        "on-click-middle": "amixer -c 0 set Capture toggle",
+        "on-scroll-up": "amixer -c 0 set Capture 10%+",
+        "on-scroll-down": "amixer -c 0 set Capture 10%-",
+        "tooltip-format": "{source_desc} | {source_volume}%"
+    },
+
+    "pulseaudio": {
+        "format": "󱄠 {volume}%",
+        "format-muted": "",
+        "on-click": "pavucontrol",
+        "on-click-middle": "amixer -c 0 set Master toggle",
+        "on-scroll-up": "amixer -c 0 set Master 2%+",
+        "on-scroll-down": "amixer -c 0 set Master 2%-",
+        "tooltip-format": "{desc} | {volume}%"
+    },
+
+    "custom/lock": {
+        "tooltip": false,
+        "on-click": "sh -c '(sleep 0.5s; swaylock --grace 0)' & disown",
+        "format": ""
+    },
+
+    "custom/power": {
+        "tooltip": false,
+        "on-click": "wlogout &",
+        "format": " "
+    },
+
+    "cpu": {
+        "interval": 10,
+        "format": "  {avg_frequency}GHz",
+        "max-length": 10
+    },
+
+    "disk": {
+        "interval": 30,
+        "format": "󰉉 {percentage_used}%",
+        "max-length": 10
+    },
+
+    "memory": {
+        "interval": 30,
+        "format": " {percentage}%",
+        "max-length": 10
+    },
+
+    "network": {
+        "interface": "wlp2s0",
+        "format": "{ifname}",
+        "format-wifi": "",
+        "format-ethernet": "󰌗",
+        "format-disconnected": "󱛅",
+        "tooltip-format": "{ifname} via {gwaddr}",
+        "tooltip-format-wifi": "{essid} - {ipaddr} ({signalStrength}% - {frequency})",
+        "tooltip-format-ethernet": "{ifname} - {ipaddr}",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50
+    },
+
+    "temperature": {
+        "thermal-zone": 4,
+        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "critical-threshold": 80,
+        "format-critical": "{temperatureC}°C ",
+        "format": "{temperatureC}°C "
+}
+}
